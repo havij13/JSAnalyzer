@@ -112,8 +112,7 @@ SECRET_PATTERNS = [
     (re.compile(r'sl.[A-Za-z0-9_-]{20,100}'), "Dropbox Access Token"),
     (re.compile(r'glpat-[0-9a-zA-Z-_]{20}'), "GitLab Token"),
     (re.compile(r'shpat_[0-9a-fA-F]{32}'), "Shopify Access Token"),
-    
-    
+    (re.compile(r'[a-f0-9]{32}'),"Bugsnag API Key"),
 ]
 
 # Email pattern
