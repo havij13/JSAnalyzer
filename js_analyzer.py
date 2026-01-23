@@ -101,6 +101,7 @@ SECRET_PATTERNS = [
     (re.compile(r'\b(ya29\.[a-z0-9_-]{30,})\b'), "Google OAuth2 Access Token"),
     (re.compile(r'\d{9}:[a-zA-Z0-9_-]{35}'), "Telegram Bot Token"),
     (re.compile(r'lin_api_[a-zA-Z0-9]{40}'), "Linear API Key"),
+    (re.compile(r'[hH]eroku['\"][0-9a-f]{32}['\"]'), "Heroku API Key"),
     
 ]
 
