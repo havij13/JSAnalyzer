@@ -113,6 +113,8 @@ SECRET_PATTERNS = [
     (re.compile(r'glpat-[0-9a-zA-Z-_]{20}'), "GitLab Token"),
     (re.compile(r'shpat_[0-9a-fA-F]{32}'), "Shopify Access Token"),
     (re.compile(r'[a-f0-9]{32}'),"Bugsnag API Key"),
+    (re.compile(r'[a-z0-9]{32}'),"Datadog API Key"),
+    (re.compile(r'NRII-[a-zA-Z0-9]{20,}'),"New Relic Key"),
 ]
 
 # Email pattern
